@@ -16,13 +16,9 @@ const appConfig = {
 const serviceWorkerConfig = {
   ...rootConfig,
   entry: './src/firebase-messaging-sw.js',
-  experiments: {
-    outputModule: true
-  },
   output: {
     filename: 'firebase-messaging-sw.js',
-    path: path.resolve(__dirname, 'public'),
-    module: true
+    path: path.resolve(__dirname, 'public')
   },
 };
 
